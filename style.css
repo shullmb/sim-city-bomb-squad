@@ -1,6 +1,7 @@
 body {
     background-size: cover;
     background-attachment: fixed;
+    font-family: monospace;
 }
 
 .unexploded {
@@ -22,14 +23,16 @@ body {
 .mainbox {
     width: 200px;
     margin: 5% auto;
-    background-color: #000;
+    /* background-color: #000; */
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAALElEQVQYV2NkYGD4b2ZmxoAMGEGCIAGQxKlTp8A0XBCmEi4IUwWTAKtEFwQAByYP58t/fmkAAAAASUVORK5CYII=);
     text-align: center;
 }
 .mainbox div {
     padding: 2%;
 }
 
-.timerbox {
+.timerbox p {
+    font-size: 1.5em;
 }
 
 .wirebox {
@@ -40,4 +43,5 @@ body {
 
 button {
     width: 80%;
+    margin-bottom: 10px;
 }

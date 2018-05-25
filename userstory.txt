@@ -28,3 +28,10 @@ on wirecut:
         right => final wire? => win
         wrong => bad wirecut
 
+
+
+___
+
+requirements
+    keep track of which wires have been cut
+    keep track of correct wires
