@@ -27,4 +27,4 @@ on wirecut:
     is right or wrong
         right => final wire? => win
         wrong => bad wirecut
-        
+
