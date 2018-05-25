@@ -1,0 +1,30 @@
+on load:
+    start timer
+    class unexploded
+    display uncut wire images
+    color timer red
+    deactivate reset
+    play siren sound
+    randomly assign correct wires
+
+on win:
+    stop timer, color green
+    play yaaay,
+    play victory song
+    enable reset
+
+on bad wirecut:
+    start 750ms timeout
+        on timeout:
+        =>  class to exploded
+            enable reset
+            play boom sound
+            stop the timer
+
+on wirecut:
+    swap image
+    disable click
+    is right or wrong
+        right => final wire? => win
+        wrong => bad wirecut
+        
